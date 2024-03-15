@@ -19,6 +19,7 @@ while is_running:
     # Read every frame from the cam
     ret, frame = cap.read()
 
+    # If image not found shut down the program
     if not ret:
         print("Failed to grab frame")
         is_running = False
